@@ -1,0 +1,26 @@
+
+public class ElginAdapter implements ECF {
+
+	public ElginAdapter(Elgin elgin) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Object isOpen() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void readX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reduceZ() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

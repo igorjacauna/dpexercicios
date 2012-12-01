@@ -1,0 +1,8 @@
+
+public class OpcaoDeMenu extends ItemDeMenu {
+
+	public OpcaoDeMenu(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

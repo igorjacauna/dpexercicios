@@ -1,0 +1,20 @@
+
+public class Mel implements Cafe {
+
+	public Mel(CafeSimples cafeSimples) {
+	}
+
+	public Mel(Leite leite) {
+	}
+
+	@Override
+	public double getPreco() {
+		return 0;
+	}
+
+	@Override
+	public Object getIngredientes() {
+		return null;
+	}
+
+}

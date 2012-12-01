@@ -1,0 +1,15 @@
+
+public class Pizza {
+	
+	public static final String Sabor = "MUSSARELA";
+	public static final String Massa = "PAN";
+
+	public Pizza(Builder b){
+		
+	}
+
+	public class Builder {
+
+	}
+
+}

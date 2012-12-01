@@ -1,0 +1,21 @@
+
+public class Leite implements Cafe {
+
+	CafeSimples cafeSimples;
+	public Leite(CafeSimples cafeSimples) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public double getPreco() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Object getIngredientes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

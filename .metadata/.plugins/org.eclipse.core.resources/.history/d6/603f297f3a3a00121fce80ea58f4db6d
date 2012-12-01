@@ -1,0 +1,16 @@
+
+public class Cafe {
+	
+	private double preco;
+
+	public double getPreco() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public Object getIngredientes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

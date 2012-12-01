@@ -1,0 +1,31 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestAdapter {
+
+	@Test
+	public void testElgin() {
+		Elgin ecf =  new Elgin();
+		
+		assertEquals(false, ecf.estaAberto());
+		ecf.leituraX();
+		assertEquals(true, ecf.estAberto());
+		ecf.reducaoZ;
+		assertEquals(false, ecf.estAberto());
+	}
+	@Test
+	public void testBematech(){
+		Bematech ecf =  new Bematech();
+		
+		assertEquals(false, ecf.aberto());
+		ecf.leituraX();
+		assertEquals(true, ecf.aberto());
+		ecf.reducaoZ;
+		assertEquals(false, ecf.aberto());
+		ecf.abrir();
+		assertEquals(false, ecf.aberto());
+	}
+
+}

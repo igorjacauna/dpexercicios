@@ -1,0 +1,6 @@
+
+public interface ECF {
+
+	Object isOpen();
+
+}

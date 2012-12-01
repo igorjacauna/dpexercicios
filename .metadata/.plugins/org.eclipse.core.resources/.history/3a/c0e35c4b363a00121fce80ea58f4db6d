@@ -1,0 +1,13 @@
+
+public class Submenu extends ItemDeMenu{
+
+	public Submenu(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void add(ItemDeMenu cadFun) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

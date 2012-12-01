@@ -1,0 +1,11 @@
+
+public class ECFCreator {
+
+	public static ECF getECF(String string) {
+		if(string.equals("Bematech")){
+			
+		}
+		return null;
+	}
+
+}

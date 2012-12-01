@@ -1,0 +1,8 @@
+
+public class DATFile implements DAT {
+
+	public DATFile(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
+}

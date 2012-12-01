@@ -1,0 +1,17 @@
+
+public class Pizza {
+	
+	public static enum Massa { PAN, TRADICIONAL }
+	public static enum Sabor { MUZZARELA, PEPPERONI, CALABRESA }
+
+	public Pizza(Builder b){
+		
+	}
+
+	public class Builder {
+		public Builder(){
+			
+		}
+	}
+
+}

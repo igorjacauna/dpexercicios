@@ -1,0 +1,9 @@
+
+public class ItemDeMenu {
+
+	public Object disponivel() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

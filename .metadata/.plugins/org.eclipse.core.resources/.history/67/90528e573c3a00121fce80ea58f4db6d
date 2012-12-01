@@ -1,0 +1,23 @@
+
+public class CafeSimples implements Cafe {
+	
+	double preco;
+	public CafeSimples() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public CafeSimples(double preco) {
+		this.preco = preco;
+	}
+
+	@Override
+	public double getPreco() {
+		return 1;
+	}
+
+	@Override
+	public String getIngredientes() {
+		return "Cafe";
+	}
+
+}

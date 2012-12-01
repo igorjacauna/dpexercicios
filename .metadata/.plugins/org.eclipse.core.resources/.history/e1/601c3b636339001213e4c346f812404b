@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+
+public class TestFactoryMethod {
+
+	@Test
+	public void testBematech() {
+		ECF ecf = ECFCreator.getECF("Bematech");
+		assertEquals(Bematech.class, ecf.getClass());
+	}
+	
+	@Test
+	public void testElgin() {
+		fail("Not yet implemented");
+	}
+
+}

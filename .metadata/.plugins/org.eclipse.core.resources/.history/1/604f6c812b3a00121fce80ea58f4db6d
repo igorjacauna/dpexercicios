@@ -1,0 +1,22 @@
+
+public class Bematech {
+
+	public boolean aberto;
+
+	public boolean aberto() {
+		return this.aberto;
+	}
+
+	public void leituraX() {
+		
+	}
+
+	public void reducaoZ() {
+		
+	}
+
+	public void abrir() {
+		
+	}
+
+}

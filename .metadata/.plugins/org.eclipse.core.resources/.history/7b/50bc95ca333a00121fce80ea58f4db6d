@@ -1,0 +1,4 @@
+
+public class OpcaoDeMenu extends ItemDeMenu {
+
+}

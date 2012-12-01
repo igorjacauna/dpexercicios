@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Pizza {
+	
+	public static enum Massa { PAN, TRADICIONAL }
+	public static enum Sabor { MUZZARELA, PEPPERONI, CALABRESA }
+	
+	Builder b;
+
+	public Pizza(Builder b){
+		this.b = b;
+	}
+	
+	public Massa getMassa() {
+		return b.massa;
+	}
+
+	public int getQtdDeSabores() {
+		return b.sabores.size();
+	}
+
+	public boolean containsSabor(Sabor muzzarela) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	//inner class Builder
+	
+	public static class Builder {
+		
+		Massa massa;
+		List<Sabor> sabores = new ArrayList<Sabor>();
+
+		public Builder(Massa massa){
+			this.massa = massa;
+		}
+		
+		public void addSabor(Sabor sabor){
+			sabores.add(sabor);
+		}
+	}
+
+}

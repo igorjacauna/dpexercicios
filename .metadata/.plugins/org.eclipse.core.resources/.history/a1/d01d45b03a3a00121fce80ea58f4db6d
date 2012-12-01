@@ -1,0 +1,15 @@
+
+public class Cafe {
+	
+	private double preco;
+
+	public double getPreco() {
+		return this.preco;
+	}
+
+	public Object getIngredientes() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

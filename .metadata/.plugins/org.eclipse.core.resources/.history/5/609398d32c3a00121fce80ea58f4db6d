@@ -1,0 +1,27 @@
+
+public class ElginAdapter implements ECF {
+
+	Elgin elgin;
+	
+	public ElginAdapter(Elgin elgin) {
+		this.elgin = elgin;
+	}
+
+	@Override
+	public boolean isOpen() {
+		return this.elgin.estaAberto();
+	}
+
+	@Override
+	public void readX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void reduceZ() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

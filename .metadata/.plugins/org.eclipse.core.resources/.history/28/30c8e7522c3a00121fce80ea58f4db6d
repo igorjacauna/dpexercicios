@@ -1,0 +1,8 @@
+
+public interface ECF {
+
+	Object isOpen();
+
+	void readX();
+
+}

@@ -1,0 +1,14 @@
+
+public class Bematech {
+
+	public Object aberto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void leituraX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

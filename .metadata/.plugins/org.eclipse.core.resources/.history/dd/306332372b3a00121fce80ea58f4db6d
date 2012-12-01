@@ -1,0 +1,19 @@
+
+public class Elgin {
+
+	public Object estaAberto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void leituraX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void reducaoZ() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

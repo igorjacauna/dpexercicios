@@ -1,0 +1,19 @@
+
+public class Leite implements Cafe {
+
+	CafeSimples cafeSimples;
+	public Leite(CafeSimples cafeSimples) {
+		this.cafeSimples = cafeSimples;
+	}
+
+	@Override
+	public double getPreco() {
+		return this.cafeSimples.getPreco() + 0.5;
+	}
+
+	@Override
+	public String getIngredientes() {
+		return this.cafeSimples.getIngredientes() + ",leite";
+	}
+
+}

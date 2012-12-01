@@ -1,0 +1,9 @@
+
+public class Bematech {
+
+	public Object aberto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
