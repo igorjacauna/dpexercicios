@@ -1,8 +1,0 @@
-
-public interface Cafe {
-	
-	public double getPreco();
-
-	public Object getIngredientes();
-
-}

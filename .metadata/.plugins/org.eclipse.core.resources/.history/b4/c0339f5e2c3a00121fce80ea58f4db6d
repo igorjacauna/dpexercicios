@@ -1,8 +1,0 @@
-
-public class BematechAdapter implements ECF {
-
-	public BematechAdapter(Bematech bematech) {
-		// TODO Auto-generated constructor stub
-	}
-
-}

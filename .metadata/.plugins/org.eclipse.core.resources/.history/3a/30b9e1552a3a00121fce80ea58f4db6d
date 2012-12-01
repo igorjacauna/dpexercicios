@@ -1,9 +1,0 @@
-
-public class Elgin {
-
-	public Object estaAberto() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-}

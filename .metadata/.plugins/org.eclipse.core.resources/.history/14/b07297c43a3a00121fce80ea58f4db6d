@@ -1,8 +1,0 @@
-
-public class Leite implements Cafe {
-
-	public Leite(CafeSimples cafeSimples) {
-		// TODO Auto-generated constructor stub
-	}
-
-}

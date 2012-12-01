@@ -1,8 +1,0 @@
-
-public class ElginAdapter implements ECF {
-
-	public ElginAdapter(Elgin elgin) {
-		// TODO Auto-generated constructor stub
-	}
-
-}
