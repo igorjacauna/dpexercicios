@@ -1,11 +1,11 @@
-
 public class CafeSimples implements Cafe {
-	
-	double preco = 1;
+
+	double preco;
+
 	public CafeSimples() {
-		// TODO Auto-generated constructor stub
+		this(1.0);
 	}
-	
+
 	public CafeSimples(double preco) {
 		this.preco = preco;
 	}

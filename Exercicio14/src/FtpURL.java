@@ -1,28 +1,13 @@
-
 public class FtpURL extends URI {
 
 	@Override
-	public void setHostName(String host) {
-		super.user = host;
-		
+	protected String setPrefix() {
+		return "ftp://";
 	}
 
 	@Override
-	public void setUserName(String user) {
-		super.user = user;
-		
-	}
-
-	@Override
-	public String getHostName() {
-		// TODO Auto-generated method stub
-		return super.host;
-	}
-
-	@Override
-	public String getUserName() {
-		// TODO Auto-generated method stub
-		return super.user;
+	protected String setSuffix() {
+		return ":21";
 	}
 
 }

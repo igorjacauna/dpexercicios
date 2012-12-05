@@ -1,22 +1,11 @@
+public class ReprRomana extends Representacao {
 
-public class ReprRomana implements Observer{
+	String conversao[] = { "0", "I", "II", "III", "IV", "V", "VI", "VII",
+			"VIII", "IX", "X" };
 
-	int valor;
-	
 	@Override
 	public String getRepr() {
-		switch(valor){
-		case 1: return "I";
-		case 2: return "II";
-		case 3: return "III";
-		case 4: return "IV";
-		case 5: return "V";
-		case 6: return "VI";
-		case 7: return "VII";
-		case 8: return "VIII";
-		case 9: return "IX";
-		default: return "X";
-	}
+		return conversao[valor];
 	}
 
 }

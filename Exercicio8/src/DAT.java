@@ -1,8 +1,8 @@
 
 public interface DAT {
 
-	void loadData();
+	void loadData() throws Exception;
 
-	Object getData();
+	String getData();
 
 }

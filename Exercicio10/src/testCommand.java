@@ -6,7 +6,7 @@ import java.util.List;
 import org.junit.Test;
 
 
-public class testCommand {
+public class TestCommand {
 
 	@Test
 	public void testRegistradora() {

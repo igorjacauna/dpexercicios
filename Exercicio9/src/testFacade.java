@@ -2,49 +2,47 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-
-public class testFacade {
+public class TestFacade {
 
 	@Test
 	public void testCronometro() {
 		Cronometro t = new Cronometro();
-		t.incia();
-		
+		t.inicia();
+
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			Thread.currentThread().interrupt();
 		}
-		
-		assertTrue(t.finaliza() > 1000);
+
+		assertTrue(t.finaliza() >= 1000);
 	}
-	
+
 	@Test
-	public void testReservaHotel(){
+	public void testReservaHotel() {
 		Hotel h = new Hotel();
-		
-		assertFalse(h.reservarQuartoNoDia(1));
-		assertTrue(h.reservarQuartoNoDia(2));
-		assertFalse(h.reservarQuartoNoDia(3));
-		
+
+		assertFalse(h.reservarHotelNoDia(1));
+		assertTrue(h.reservarHotelNoDia(2));
+		assertFalse(h.reservarHotelNoDia(3));
 	}
-	
+
 	@Test
-	public void testReservaVoo(){
+	public void testReservaVoo() {
 		Voo v = new Voo();
-		
+
 		assertTrue(v.reservarVooNoDia(1));
 		assertTrue(v.reservarVooNoDia(2));
 		assertFalse(v.reservarVooNoDia(3));
 	}
-	
+
 	@Test
-	public void testReservaViagem(){
+	public void testReservaViagem() {
 		ViagemFacade v = new ViagemFacade();
-		
-		assertFalse(v.reservarVooEHotelDia(1));
-		assertTrue(v.reservarVooEHotelDia(2));
-		assertFalse(v.reservarVooEHotelDia(3));
+
+		assertFalse(v.reservarVooEHotelNoDia(1));
+		assertTrue(v.reservarVooEHotelNoDia(2));
+		assertFalse(v.reservarVooEHotelNoDia(3));
 	}
 
 }

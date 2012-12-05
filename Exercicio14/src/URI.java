@@ -1,33 +1,27 @@
-
 public abstract class URI {
-	
-	String host, user;
 
-	public  void setHostName(String string)
-	{
-		
-	}
+	String userName;
+	String hostName;
+	String prefix;
+	String suffix;
 
-	public void setUserName(String string)
-	{
-		
-	}
-	
-	public String getHostName(){
-		
+	public void setHostName(String host) {
+		this.hostName = host;
 	}
 
-	public String getUserName(){
-		
+	public void setUserName(String user) {
+		this.userName = user;
 	}
-	
-	public abstract String getPort();
-	public abstract String getScheme();
-	
 
-	public String getUrl() {
-		
-		return null;
+	public String getURL() {
+		prefix = setPrefix();
+		suffix = setSuffix();
+
+		return prefix + userName + "@" + hostName + suffix;
 	}
+
+	abstract protected String setPrefix();
+
+	abstract protected String setSuffix();
 
 }

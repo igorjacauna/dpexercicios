@@ -1,26 +1,52 @@
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.SortedMap;
+import java.util.TreeMap;
 
 public class DIR {
-	
-	private static List<CalculoIR> calculos = new ArrayList<CalculoIR>();
-	//SortedMap<Intenger,CalculoIR>
-	
-	public DIR(int ano, int salario, int dependente) {
-		// TODO Auto-generated constructor stub
+
+	static SortedMap<Integer, Calculo> tabelaCalculo = new TreeMap<Integer, Calculo>();
+	static Integer padrao;
+
+	public static void addCalculoIR(int ano, Calculo calculo) {
+		tabelaCalculo.put(ano, calculo);
+
+		if (padrao == null) {
+			padrao = ano;
+		}
 	}
 
-	public static void addCalculaIR(int i, CalculoIR dir) {
-		calculos.add(dir);
+	int ano;
+	double renda;
+	int dependentes;
+
+	public DIR(int ano, double renda, int dependentes) {
+		this.ano = ano;
+		this.renda = renda;
+		this.dependentes = dependentes;
 	}
 
 	public double calculaIR() {
-		for(CalculoIR cal: calculos){
-			
-			
+		if (tabelaCalculo.isEmpty()) {
+			throw new IllegalStateException(
+					"Voce precisa adicionar um calculo antes de chamar calculaIR()!!!");
 		}
-		return 0;
+
+		Calculo calc;
+
+		int anoCalculo = 0;
+
+		for (int ano : tabelaCalculo.keySet()) {
+			if (ano <= this.ano) {
+				anoCalculo = ano;
+			}
+		}
+
+		if (anoCalculo == 0) {
+			anoCalculo = padrao;
+		}
+
+		calc = tabelaCalculo.get(anoCalculo);
+
+		return calc.calculaIR(renda, dependentes);
 	}
 
 }

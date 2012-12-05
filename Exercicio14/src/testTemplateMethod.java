@@ -2,31 +2,33 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-
-public class testTemplateMethod {
+public class TestTemplateMethod {
 
 	@Test
 	public void testFTP() {
 		URI uri = new FtpURL();
-		uri.setHostName("ftp.br");
-		uri.setUserName("üser1");
-		assertEquals("ftp://user1@fpf.br", uri.getUrl());
-	}
-	
-	@Test
-	public void testSSH(){
-		URI uri = new SshURL();
-		uri.setHostName("ftp.br");
+		uri.setHostName("fpf.br");
 		uri.setUserName("user1");
-		assertEquals("ssh://user1@fpf.br:22", uri.getUrl());
+
+		assertEquals("ftp://user1@fpf.br:21", uri.getURL());
 	}
-	
+
 	@Test
-	public void testMAIL(){
+	public void testSSH() {
+		URI uri = new SshURL();
+		uri.setHostName("fpf.br");
+		uri.setUserName("user1");
+
+		assertEquals("ssh://user1@fpf.br:22", uri.getURL());
+	}
+
+	@Test
+	public void testMAIL() {
 		URI uri = new MailURL();
 		uri.setHostName("fpf.br");
 		uri.setUserName("user1");
-		assertEquals("mailto:user1@fpf.br", uri.getUrl());
+
+		assertEquals("mailto:user1@fpf.br", uri.getURL());
 	}
 
 }

@@ -1,18 +1,8 @@
+public class CalculoIR2009 implements Calculo {
 
-public class CalculoIR2009 implements CalculoIR{
-
-//	int ano;
-	double renda;
-	double ir;
-	int dependentes;
-	
 	@Override
-	public double calculaIR() {
-		
-		ir=(renda-(dependentes*100))/3.0;
-		
-		return ir;
+	public double calculaIR(double salario, int dependentes) {
+		return (salario - (dependentes * 100)) / 3.0;
 	}
-
 
 }

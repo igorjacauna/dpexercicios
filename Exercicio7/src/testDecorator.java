@@ -1,9 +1,9 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-
-public class testDecorator {
+public class TestDecorator {
 
 	@Test
 	public void testCafeSimples() {
@@ -11,26 +11,26 @@ public class testDecorator {
 		assertTrue(c.getPreco() == 1.0);
 		assertEquals("Cafe", c.getIngredientes());
 	}
-	
+
 	@Test
-	public void testCafeComLeite(){
+	public void testCafeComLeite() {
 		Cafe c = new Leite(new CafeSimples());
 		assertTrue(c.getPreco() == 1.5);
-		assertEquals("Cafe,leite", c.getIngredientes());
+		assertEquals("Cafe,Leite", c.getIngredientes());
 	}
-	
+
 	@Test
-	public void testCafeComMel(){
-		Cafe c = new Mel(new CafeSimples(1.5));
+	public void testCafeComMel() {
+		Cafe c = new Mel(new CafeSimples(1.25));
 		assertTrue(c.getPreco() == 1.5);
-		assertEquals("Cafe,mel", c.getIngredientes());
+		assertEquals("Cafe,Mel", c.getIngredientes());
 	}
-	
+
 	@Test
-	public void testVariosCafes(){
+	public void testVariosCafes() {
 		Cafe c = new Mel(new Leite(new CafeSimples(1.5)));
 		assertTrue(c.getPreco() == 2.25);
-		assertEquals("Cafe,leite,mel", c.getIngredientes());
+		assertEquals("Cafe,Leite,Mel", c.getIngredientes());
 	}
 
 }

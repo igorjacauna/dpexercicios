@@ -1,20 +1,27 @@
-
 public class DATProxy implements DAT {
 
-	public DATProxy(String string) {
-		// TODO Auto-generated constructor stub
+	private String fileName;
+	private DATFile datFile;
+
+	public DATProxy(String path) {
+		this.fileName = path;
 	}
 
 	@Override
-	public void loadData() {
-		// TODO Auto-generated method stub
-
+	public void loadData() throws Exception {
 	}
 
 	@Override
-	public Object getData() {
-		// TODO Auto-generated method stub
-		return null;
+	public String getData() {
+		if (datFile == null) {
+			datFile = new DATFile(fileName);
+		}
+
+		try {
+			datFile.loadData();
+		} catch (Exception e) {
+		}
+		return datFile.getData();
 	}
 
 }

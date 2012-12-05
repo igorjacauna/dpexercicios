@@ -1,26 +1,20 @@
-
 public class Mel implements Cafe {
-	
-	CafeSimples cafe;
-	Leite leite;
-	double preco;
 
-	public Mel(CafeSimples cafeSimples) {
-		preco = cafeSimples.preco;
-	}
+	double preco = 0.25;
+	Cafe adicional;
 
-	public Mel(Leite leite) {
-		preco = leite.preco;
+	public Mel(Cafe adicional) {
+		this.adicional = adicional;
 	}
 
 	@Override
 	public double getPreco() {
-		return preco + 0.25;
+		return adicional.getPreco() + this.preco;
 	}
 
 	@Override
 	public String getIngredientes() {
-		return this.cafe.getIngredientes() + ",mel";
+		return adicional.getIngredientes() + ",Mel";
 	}
 
 }
